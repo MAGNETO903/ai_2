@@ -28,7 +28,7 @@ llm = LlamaCpp(
     top_p=0.9, # Verbose is required to pass to the callback manager
     lang="ru",
 )
-
+app = FastAPI()
 @app.get("/message")
 def message(user_id: str, message: str):
     
