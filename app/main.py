@@ -32,7 +32,7 @@ app = FastAPI()
 @app.get("/message")
 def message(user_id: str, message: str):
     
-    return {"message": llm(mesage)}
+    return {"message": llm(message)}
 
 if __name__ == '__main__':
     uvicorn.run(app)
